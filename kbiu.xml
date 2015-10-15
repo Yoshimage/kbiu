@@ -1,39 +1,51 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="51" inline="false" x="-341" y="-317">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_button" id="67">
-        <field name="OBJECT">ENTER</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="led_select" id="76" inline="true">
-        <field name="ACTION">FLASH</field>
-        <value name="LED">
-          <block type="math_number" id="110">
-            <field name="NUM">0</field>
+  <block type="movement_forward" id="134" x="-262" y="-236">
+    <next>
+      <block type="robot_delay" id="136" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="143">
+            <field name="NUM">3000</field>
           </block>
         </value>
         <next>
-          <block type="led_select" id="91" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="117">
-                <field name="NUM">5</field>
-              </block>
-            </value>
+          <block type="movement_left" id="153">
             <next>
-              <block type="robot_delay" id="103" inline="true">
+              <block type="robot_delay" id="177" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="124">
-                    <field name="NUM">200</field>
+                  <block type="math_number" id="184">
+                    <field name="NUM">2600</field>
                   </block>
                 </value>
+                <next>
+                  <block type="oled_cleardisplay" id="193">
+                    <next>
+                      <block type="oled_drawtext" id="202">
+                        <field name="TEXT">BLUE JAYS WON!!! :-)</field>
+                        <next>
+                          <block type="movement_reverse" id="212">
+                            <next>
+                              <block type="robot_delay" id="214" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="227">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="238"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
