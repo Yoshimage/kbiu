@@ -1,5 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="644" inline="true" x="-227" y="-178">
+  <block type="controls_whileUntil" id="759" inline="false" x="-100" y="-93">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="791">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
     <statement name="DO">
       <block type="controls_if" id="651" inline="false">
         <value name="IF0">
