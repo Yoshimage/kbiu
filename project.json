@@ -1,0 +1,10 @@
+{
+    "name": "kbiu",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "kbiu.xml",
+    "author": "Yoshimage",
+    "minimum_firmware_version": 42
+}
