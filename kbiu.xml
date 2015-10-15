@@ -20,7 +20,7 @@
                   <block type="oled_cleardisplay" id="193">
                     <next>
                       <block type="oled_drawtext" id="202">
-                        <field name="TEXT">BLUE JAYS WON!!! :-)</field>
+                        <field name="TEXT">Blue Jays!</field>
                         <next>
                           <block type="movement_reverse" id="212">
                             <next>
